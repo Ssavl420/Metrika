@@ -158,7 +158,7 @@ h1 {
 .main__cards {
    margin: 150px 0 0 0;
    a {
-      display: block;
+      display: inline-block;
       margin: 14px 0 0 0px;
       font-size: 20px;
       line-height: 27px;
@@ -240,13 +240,16 @@ h1 {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      width: 255px;
       height: 67px;
       font-size: 20px;
       line-height: 27px;
       background-color: #AD1818;
       color: white;
       border-radius: 5px;
+      @media (max-width:1199px) {
+         width: 100%;
+      }
       @media (max-width:767px) {
          width: 100%;
          height: 51px;
@@ -273,6 +276,7 @@ h1 {
 .projects__bigbtn .btn{
    margin: 90px 0 150px 0;
    max-width: 1150px;
+   width: 100%;
    height: 153px;
    border: 1px solid #AD1818;
    border-radius: 5px;
