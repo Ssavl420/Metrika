@@ -770,7 +770,6 @@ h1 {
   .services .services__container .services__item {
     margin: 0;
     width: 100%;
-    min-width: 363px;
   }
   .services .services__container .services__item:last-child {
     padding: 0;
