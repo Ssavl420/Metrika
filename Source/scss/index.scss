@@ -970,6 +970,39 @@ h1 {
       }
    }
 }
+@media (orientation:landscape) and (max-height:700px) {
+   .popup {
+      .popup__body {
+         .popup__content {
+            padding: 20px;
+            .popup__close {
+               top: 15px;
+               right: 15px;
+               img {}
+            }
+            .popup__title {
+               font-size: 30px;
+               line-height: 32px;
+            }
+            .popup__subtitle {
+               margin: 0 0 20px 0;
+               max-width: 100%;
+            }
+            .popup__form {
+               input {
+                  margin: 0 0 20px;
+                  font-size: 20px;
+                  &:last-child {
+                     margin: 0 0 10px 0;
+                  }
+               }
+            }
+            .popup__btn {
+            }
+         }
+      }
+   }
+}
 .transition__left-onepx {
    margin: 0 0 0 1px;
 }
