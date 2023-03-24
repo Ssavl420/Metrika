@@ -699,9 +699,14 @@ h1 {
    left: 0;
    opacity: 0;
    visibility: hidden;
+   transition: all .5s ease;
    &:target {
       opacity: 1;
       visibility: visible;
+      .popup__content {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
    }
    .popup__area {
       position: absolute;
@@ -723,6 +728,9 @@ h1 {
          color: #000;
          border-radius: 10px;
          position: relative;
+         opacity: 0;
+         transform: translate(0px, 100%) scale(0.1);
+         transition: all .5s ease;
          .popup__close {
             position: absolute;
             top: 42.16px;
@@ -778,6 +786,10 @@ h1 {
          }
       }
    }
+}
+.popup:target .popup__content {
+      transform: translate(0px, 0%) scale(1);
+      opacity: 1;
 }
 
 

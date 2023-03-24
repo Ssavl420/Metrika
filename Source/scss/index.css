@@ -802,10 +802,15 @@ h1 {
   left: 0;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.5s ease;
 }
 .popup:target {
   opacity: 1;
   visibility: visible;
+}
+.popup:target .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .popup .popup__area {
   position: absolute;
@@ -828,6 +833,9 @@ h1 {
   color: #000;
   border-radius: 10px;
   position: relative;
+  opacity: 0;
+  transform: translate(0px, 100%) scale(0.1);
+  transition: all 0.5s ease;
 }
 .popup .popup__body .popup__content .popup__close {
   position: absolute;
@@ -878,6 +886,11 @@ h1 {
   background: #AD1818;
   color: #FFFFFF;
   border-radius: 5px;
+}
+
+.popup:target .popup__content {
+  transform: translate(0px, 0%) scale(1);
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
