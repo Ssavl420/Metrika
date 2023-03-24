@@ -228,7 +228,8 @@ h1 {
    }
    @media (max-width:767px) {
       margin: 20px 0 0 -1px;
-      max-width: 345px;
+      padding: 0 6px 0 0;
+      min-width: 346px;
       font-size: 22px;
       line-height: 30px;
    }
