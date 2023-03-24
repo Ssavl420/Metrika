@@ -234,10 +234,10 @@ h1 {
       line-height: 30px;
    }
 }
-.card-btn { 
+.card__btn { 
    margin: 30px 0 0 0;
    button {
-      width: 255px;
+      width: 100%;
       height: 67px;
       font-size: 20px;
       line-height: 27px;
@@ -318,9 +318,6 @@ h1 {
       gap: 40px 11px;
       .services__item {
          margin: 0 0 44px 0;
-         max-width: 572px;
-         min-width: 567px;
-         max-height: 455px;
          flex: 1 1 calc((100% / 2) - 11px);
          &:first-child {
             margin: 0 0 0 0;
@@ -330,7 +327,6 @@ h1 {
          }
          .services__image {
             max-width: 1150px;
-            height: 389px;
             position: relative;
             img{
                width: 100%;
@@ -582,21 +578,29 @@ h1 {
       padding: 151px 0 120px 0;
       .cards__subtitle {margin: 0 0 30px 0;}
       .services__container {
+         margin: 0 0 80px 0;
          justify-content: center;
          gap: 80px 10px;
          .services__item {
-            max-width: 460px;
-            min-width: 400px;
-            max-height: 371px;
-            
+            margin: 0;
+            width: 100%;
+            min-width: 363px;
+            &:last-child {
+               padding: 0;
+            }
             .services__image {
-               width: 460px;
-               height: 315px;
                img{}
-               .services__price {}
+               .services__price {
+                  padding: 7px 26px;
+                  font-size: 20px;
+                  line-height: 27px;
+               }
             }
             .description {
                margin: 15px 0 0 4px;
+               max-width: 286px;
+               font-size: 25px;
+               line-height: 34px;
             }
          }
       }
@@ -684,25 +688,35 @@ h1 {
 }
 @media (max-width:767px) {
    .services {
-      @media (max-width:767px) {
-         padding: 80px 0 0 0;
-      }
+      padding: 80px 0;
+      
       .cards__subtitle {
-         @media (max-width:767px) {
-            margin: 0 0 20px 4px;
-         }
+         margin: 0 0 20px 4px;
       }
       .services__container {
+         gap: 60px;
          .services__item {
-            margin: 67px 0 0 0;
+            flex: 1 1 100%;
             .services__image {
                img{}
                .services__price {
-                  }
+                  padding: 5px 23px;
+                  font-size: 14px;
+                  line-height: 19px;
+               }
             }
                .description {
                   margin: 10px 0 0 1px;
+                  font-size: 18px;
+                  line-height: 25px;
                }
+         }
+      }
+      .services__btn {
+         max-height: 100px;
+         a {
+            font-size: 18px;
+            line-height: 25px;
          }
       }
    }
