@@ -639,10 +639,30 @@ h1 {
   opacity: 0.6;
   transform: scale(1.3);
 }
+.gallery .slick-dots {
+  display: none;
+  margin: 15px 0 0 0;
+  justify-content: center;
+  gap: 15px;
+}
 .gallery .slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  border: 1px solid gray;
+  transition: background 0.5s ease;
   /* Активная точка */
   /* Элемент точки */
 }
+.gallery .slick-dots li.slick-active {
+  border: 1px solid gray;
+  background: transparent;
+}
+.gallery .slick-dots li button {
+  font-size: 0;
+}
+
 .contacts {
   padding: 150px 0;
 }
@@ -812,6 +832,9 @@ h1 {
   }
   .gallery .slick-arrow.slick-next {
     left: calc(104px + 65 * (100vw - 767px) / 432);
+  }
+  .gallery .slick-dots {
+    display: none;
   }
   .contacts {
     margin: 0 0 4px 0;
@@ -1021,6 +1044,7 @@ h1 {
     left: calc(13px + 37 * (100vw - 375px) / 392);
   }
   .gallery .slick-arrow {
+    visibility: hidden;
     top: 46.32%;
   }
   .gallery .slick-arrow.slick-prev {
@@ -1032,6 +1056,11 @@ h1 {
     width: 30px;
     height: 30px;
     left: calc(340px + 391 * (100vw - 375px) / 392);
+  }
+  .gallery .slick-dots {
+    display: flex;
+    position: absolute;
+    left: calc(50% - 42.5px);
   }
   .contacts {
     padding: 80px 0;

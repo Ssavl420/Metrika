@@ -512,11 +512,26 @@ h1 {
    }
    /* Точки (булиты) */
    .slick-dots{
+      display: none;
+      margin: 15px 0 0 0;
+      justify-content: center;
+      gap: 15px;
       li{
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background: gray;
+         border: 1px solid gray;
+         transition: background 0.5s ease;
          /* Активная точка */
-         .slick-active{}
+         &.slick-active{
+            border: 1px solid gray;
+            background: transparent;
+         }
          /* Элемент точки */
-         button{}
+         button{
+            font-size: 0;
+         }
       }
    }
 }
@@ -698,6 +713,9 @@ h1 {
          &.slick-next{
             left: calc(104px + (169 - 104) * ((100vw - 767px) / (1199 - 767)));
          }
+      }
+      .slick-dots {
+         display: none;
       }
    }
    .contacts {
@@ -924,6 +942,7 @@ h1 {
          }
       }
       .slick-arrow{
+         visibility: hidden;
          top: 46.32%;
          &.slick-prev{
             width: 30px;
@@ -935,6 +954,11 @@ h1 {
             height: 30px;
             left: calc(340px + (731 - 340) * ((100vw - 375px) / (767 - 375)));
          }
+      }
+      .slick-dots {
+         display: flex;
+         position: absolute;
+         left: calc((100% / 2) - 42.5px);
       }
    }
    .contacts {
