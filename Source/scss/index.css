@@ -146,6 +146,12 @@ body {
     height: 26px;
   }
 }
+.header .header__container .burger__icon {
+  display: none;
+}
+.header .header__container .burger {
+  display: none;
+}
 .header .header__container .header__menu {
   display: flex;
   justify-content: center;
@@ -760,6 +766,115 @@ h1 {
 }
 
 @media (max-width: 1199px) {
+  .header .header__container .burger__icon {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .header .header__container .burger__icon::before, .header .header__container .burger__icon::after {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    transition: all 0.3s ease;
+    background-color: #000;
+  }
+  .header .header__container .burger__icon::before, .header .header__container .burger__icon::after {
+    content: "";
+  }
+  .header .header__container .burger__icon::before {
+    top: 0;
+    height: 2px;
+  }
+  .header .header__container .burger__icon::after {
+    bottom: 0;
+    width: 31px;
+    height: 2px;
+  }
+  .header .header__container .burger {
+    display: none;
+  }
+  .header .header__container .burger-active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.5s ease;
+  }
+  .header .header__container .burger-active .burger__body {
+    padding: 80px 0 0 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 73%;
+    height: 612px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0 0 0 30px;
+    transition: right 0.5s ease;
+  }
+  .header .header__container .burger-active .burger__body .burger__close {
+    position: absolute;
+    top: 26.91px;
+    right: 26.91px;
+    width: 20.18px;
+    height: 20.18px;
+  }
+  .header .header__container .burger-active .burger__body .burger__close img {
+    width: 100%;
+    height: 100%;
+  }
+  .header .header__container .burger-active .burger__body .burger__logo {
+    margin: 0 0 50px 0;
+    width: 156px;
+    height: 28px;
+  }
+  .header .header__container .burger-active .burger__body .burger__logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .header .header__container .burger-active .burger__body .burger__menu {
+    margin: 0 0 88px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    line-height: 34px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+  .header .header__container .burger-active .burger__body .burger__menu a {
+    color: #000000;
+  }
+  .header .header__container .burger-active .burger__body .burger__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .header .header__container .burger-active .burger__body .burger__footer p {
+    margin: 0 0 0 3px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.5;
+  }
+  .header .header__container .burger-active .burger__body .burger__footer a {
+    margin: 6px 0 0 3px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    color: #121212;
+  }
   .reviews {
     padding: 0 0 120px 0;
   }

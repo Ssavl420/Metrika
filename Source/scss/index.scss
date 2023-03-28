@@ -64,6 +64,12 @@ body {
             height: 26px;
          }
       }
+      .burger__icon {
+         display: none;
+      }
+      .burger {
+         display: none;
+      }
       .header__menu {
          display: flex;
          justify-content: center;
@@ -160,7 +166,6 @@ h1 {
       }
    }
 }
-
 .main__cards {
    margin: 150px 0 0 0;
    a {
@@ -625,6 +630,122 @@ h1 {
    }
 }
 @media (max-width:1199px) {
+   .header {
+      .header__container {
+         .burger__icon {
+            display: block;
+            position: relative;
+            width: 50px;
+            height: 10px;
+            cursor: pointer;
+            z-index: 5;
+            &::before,
+            &::after {
+               position: absolute;
+               right: 0;
+               width: 100%;
+               height: 10%;
+               transition: all .3s ease;
+               background-color: #000;
+            }
+            &::before,
+            &::after {
+               content: '';
+            }
+            &::before {
+               top: 0;
+               height: 2px;
+            }
+            &::after {
+               bottom: 0;
+               width: 31px;
+               height: 2px;
+            }
+         }
+         .burger {
+            display: none;
+         }
+         .burger-active{
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .9);
+            transition: all .5s ease;
+            .burger__body {
+               padding: 80px 0 0 30px;
+               position: absolute;
+               top: 0;
+               right: 0;
+               width: 73%;
+               height: 612px;
+               display: flex;
+               align-items: flex-start;
+               flex-direction: column;
+               background-color: #fff;
+               border-radius: 0 0 0 30px;
+               transition: right .5s ease;
+               .burger__close {
+                  position: absolute;
+                  top: 26.91px;
+                  right: 26.91px;
+                  width: 20.18px;
+                  height: 20.18px;
+                  img {
+                     width: 100%;
+                     height: 100%;
+                  }
+               }
+               .burger__logo {
+                  margin: 0 0 50px 0;
+                  width: 156px;
+                  height: 28px;
+                  img {
+                  width: 100%;
+                  height: 100%;
+                  }
+               }
+               .burger__menu {
+                  margin: 0 0 88px 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  font-size: 25px;
+                  line-height: 34px;
+                  letter-spacing: -0.03em;
+                  text-transform: uppercase;
+                  a {
+                     color: #000000;
+                  }
+                  
+               }
+               .burger__footer {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 6px;
+                  p{
+                     margin: 0 0 0 3px;
+                     font-size: 16px;
+                     line-height: 22px;
+                     letter-spacing: -0.03em;
+                     color: #000000;
+                     opacity: 0.5;
+                  }
+                  a{
+                     margin: 6px 0 0 3px;
+                     font-size: 20px;
+                     line-height: 20px;
+                     letter-spacing: -0.03em;
+                     color: #121212;
+                  }
+               }
+            }
+         }
+      }
+   }
    .reviews {
       padding: 0 0 120px 0;
       .reviews__title {
@@ -759,7 +880,6 @@ h1 {
       }
    }
 }
-
 .popup {
    position: fixed;
    width: 100%;
@@ -862,10 +982,6 @@ h1 {
       transform: translate(0px, 0%) scale(1);
       opacity: 1;
 }
-
-
-
-
 @media (max-width:767px) {
    .reviews {
       padding: 0 0 80px 0;
