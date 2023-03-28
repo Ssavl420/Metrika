@@ -207,12 +207,21 @@ h1 {
 .main__picture {
   margin: 30px auto 0 auto;
   max-width: 1150px;
+  height: 500px;
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), url("../../Img/content/01.png") center/cover no-repeat;
+}
+@media (max-width: 1199px) {
+  .main__picture {
+    height: 400px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), url("../../Img/content/01-medium.png") center/cover no-repeat;
+  }
 }
 @media (max-width: 767px) {
   .main__picture {
     margin: 28px 0 0 0;
+    height: 304px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%), url("../../Img/content/01-small.png") center/cover no-repeat;
   }
 }
 .main__picture picture {
@@ -369,11 +378,6 @@ h1 {
   background-color: #AD1818;
   color: white;
   border-radius: 5px;
-}
-@media (max-width: 1199px) {
-  .card__btn a {
-    width: 100%;
-  }
 }
 @media (max-width: 767px) {
   .card__btn a {
