@@ -65,20 +65,20 @@ body {
          }
       }
       .header__menu {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 58px;
          padding: 7px 0 0 0;
          text-transform: uppercase;
          color: #121212;
          a {
-            margin: 0 58px 0 0;
             padding: 0 0 2px 0;
             color: #121212;
-            transition: opacity 0.5s ease 0s;
+            transition: opacity 0.5s ease;
             &:hover {
                border-bottom: 1px solid rgba(0, 0, 0,.5);
                opacity: 0.5;
-            }
-            &:last-child {
-               margin-right: 0;
             }
          }
          @media (max-width:1199px) {
@@ -513,8 +513,10 @@ h1 {
    }
    /* Точки (булиты) */
    .slick-dots{
-      display: none;
-      margin: 15px 0 0 0;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: calc((100% / 2) - 42.5px);
       justify-content: center;
       gap: 15px;
       li{
@@ -943,7 +945,7 @@ h1 {
          }
       }
       .slick-arrow{
-         visibility: hidden;
+         // visibility: hidden;
          top: 46.32%;
          &.slick-prev{
             width: 30px;
