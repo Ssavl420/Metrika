@@ -19,7 +19,7 @@ $(document).ready(function () {
     //--Стартовый слайд--//
     initialSlide: 0,
     //--Автоматически проигрывать слайды--//
-    autoplay: false,
+    autoplay: true,
     //--Период авто прокрутки (по умолчанию "3000" это 3 сек.)--//
     autoplaySpeed: 5000,
     //--Пауза при наведении мышки--//
@@ -90,13 +90,6 @@ const burgerMenu = document.querySelector(".burger__icon");
 const burgerClose = document.querySelector(".burger__close");
 const burgerItem = document.querySelector(".burger__menu");
 const burgerContacts = document.querySelector(".burger__footer");
-
-// if (burgerMenu) {
-//   const burger = document.querySelector(".burger");
-//   burgerMenu.addEventListener("click", function (e) {
-//     burger.classList.toggle();
-//   });
-// }
 
 if (burgerMenu) {
   const burger = document.querySelector(".burger");
