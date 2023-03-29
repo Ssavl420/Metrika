@@ -1316,6 +1316,36 @@ h1 {
     line-height: 25px;
   }
 }
+@media (max-width: 355px) {
+  h1 {
+    max-width: 269px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .main__picture {
+    margin: 0 0 0 0;
+  }
+  .card__text {
+    margin: 20px 0 0 -1px;
+    padding: 0 6px 0 0;
+    max-width: 346px;
+    min-width: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .card__text p {
+    max-width: 100%;
+  }
+  .gallery .gallery__bg .gallery__title {
+    left: 45px;
+  }
+  .gallery .gallery__bg .gallery__text {
+    left: 45px;
+  }
+  .footer .footer__menu {
+    gap: 10px;
+  }
+}
 @media (orientation: landscape) and (max-height: 700px) {
   .popup .popup__body .popup__content {
     padding: 20px;
