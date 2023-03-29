@@ -551,10 +551,10 @@ h1 {
 }
 
 .reviews {
-  padding: 0 0 157px 0;
+  padding: 150px 0 157px 0;
 }
 .reviews .reviews__title {
-  margin: 150px 0 30px 0;
+  margin: 0 0 30px 0;
 }
 .reviews .reviews__body {
   display: flex;
@@ -912,10 +912,10 @@ h1 {
     overflow: auto;
   }
   .reviews {
-    padding: 0 0 120px 0;
+    padding: 117px 0 120px 0;
   }
   .reviews .reviews__title {
-    margin: 117px 0 30px 0;
+    margin: 0 0 30px 0;
   }
   .reviews .reviews__body {
     gap: 80px 10px;
@@ -1130,10 +1130,10 @@ h1 {
 
 @media (max-width: 767px) {
   .reviews {
-    padding: 0 0 80px 0;
+    padding: 80px 0 80px 0;
   }
   .reviews .reviews__title {
-    margin: 80px 0 22px 0;
+    margin: 0 0 22px 0;
   }
   .reviews .reviews__body {
     display: flex;
