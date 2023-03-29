@@ -101,15 +101,19 @@ const burgerContacts = document.querySelector(".burger__footer");
 if (burgerMenu) {
   const burger = document.querySelector(".burger");
   burgerMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle("body-lock");
     burger.classList.toggle("burger-active");
   });
   burgerClose.addEventListener("click", function (e) {
+    document.body.classList.toggle("body-lock");
     burger.classList.toggle("burger-active");
   });
   burgerItem.addEventListener("click", function (e) {
+    document.body.classList.toggle("body-lock");
     burger.classList.toggle("burger-active");
   });
   burgerContacts.addEventListener("click", function (e) {
+    document.body.classList.toggle("body-lock");
     burger.classList.toggle("burger-active");
   });
 }

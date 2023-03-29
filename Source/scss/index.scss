@@ -26,6 +26,9 @@ body {
    font-family: Manrope;
    font-size: 18px;
    line-height: 25px;
+   &.body-lock {
+      overflow: hidden;
+   }
 }
 .container {
    margin: 0 auto;

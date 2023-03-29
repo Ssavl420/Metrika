@@ -98,6 +98,9 @@ body {
   font-size: 18px;
   line-height: 25px;
 }
+body.body-lock {
+  overflow: hidden;
+}
 
 .container {
   margin: 0 auto;
