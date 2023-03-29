@@ -279,6 +279,11 @@ h1 {
   font-size: 20px;
   line-height: 27px;
   color: #AD1818;
+  transition: all 0.5s ease;
+}
+.main__cards a:hover {
+  color: #000;
+  border-bottom: 1px solid #000000;
 }
 @media (max-width: 1199px) {
   .main__cards a {
@@ -387,6 +392,13 @@ h1 {
   background-color: #AD1818;
   color: white;
   border-radius: 5px;
+  border: 1px solid #AD1818;
+  transition: all 0.3s ease;
+}
+.card__btn a:hover {
+  color: #AD1818;
+  background-color: #fff;
+  border: 1px solid #AD1818;
 }
 @media (max-width: 767px) {
   .card__btn a {
@@ -702,6 +714,11 @@ h1 {
 }
 .contacts .contacts__inner .contacts__connection .contacts__phone a {
   color: #121212;
+  transition: all 0.5s ease;
+}
+.contacts .contacts__inner .contacts__connection .contacts__phone a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 .contacts .contacts__inner .contacts__connection .contacts__phone::before {
   content: "";
@@ -720,6 +737,11 @@ h1 {
 .contacts .contacts__inner .contacts__connection .contacts__email a {
   color: #121212;
   opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.contacts .contacts__inner .contacts__connection .contacts__email a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 .contacts .contacts__inner .contacts__connection .contacts__email::before {
   content: "";

@@ -177,6 +177,11 @@ h1 {
       font-size: 20px;
       line-height: 27px;
       color: #AD1818;
+      transition: all .5s ease;
+      &:hover {
+         color: #000;
+         border-bottom: 1px solid #000000;
+      }
       @media (max-width:1199px) {
          margin: 10px 0 0 0;
       }
@@ -261,6 +266,13 @@ h1 {
       background-color: #AD1818;
       color: white;
       border-radius: 5px;
+      border: 1px solid #AD1818;
+      transition: all .3s ease;
+      &:hover {
+         color: #AD1818;
+         background-color: #fff;
+         border: 1px solid #AD1818;
+      }
       @media (max-width:767px) {
          width: 100%;
          height: 51px;
@@ -564,7 +576,14 @@ h1 {
          line-height: 60px;
          .contacts__phone {
             position: relative;
-            a{color: #121212;}
+            a {
+               color: #121212;
+               transition: all .5s ease;
+               &:hover {
+                  color:rgba(0, 0, 0, .6);
+                  border-bottom: 2px solid rgba(0,0,0, .6);
+               }
+            }
             &::before {
                content: '';
                position: absolute;
@@ -582,6 +601,11 @@ h1 {
             a{
                color: #121212;
                opacity: .5;
+               transition: all .5s ease;
+               &:hover {
+                  color:rgba(0, 0, 0, .6);
+                  border-bottom: 2px solid rgba(0,0,0, .6);
+               }
             }
             &::before {
                content: '';
