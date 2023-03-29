@@ -773,6 +773,7 @@ h1 {
     height: 10px;
     cursor: pointer;
     z-index: 5;
+    transition: all 0.5s ease;
   }
   .header .header__container .burger__icon::before, .header .header__container .burger__icon::after {
     position: absolute;
@@ -806,18 +807,6 @@ h1 {
     transition: all 0.5s ease;
   }
   .header .header__container .burger .burger__body {
-    transform: translate(100%, 0px);
-    transition: transform 0.5s ease;
-  }
-  .header .header__container .burger.burger-active {
-    display: block;
-    visibility: visible;
-    transform: translate(0px, 0px);
-    transition: all 0.5s ease;
-    transition: transform(translate) 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  .header .header__container .burger.burger-active .burger__body {
     padding: 80px 0 0 30px;
     position: absolute;
     top: 0;
@@ -829,31 +818,30 @@ h1 {
     flex-direction: column;
     background-color: #fff;
     border-radius: 0 0 0 30px;
-    transform: translate(0px, 0px);
+    transform: translate(100%, 0px);
     transition: transform 0.5s ease;
-    overflow: auto;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__close {
+  .header .header__container .burger .burger__body .burger__close {
     position: absolute;
     top: 26.91px;
     right: 26.91px;
     width: 20.18px;
     height: 20.18px;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__close img {
+  .header .header__container .burger .burger__body .burger__close img {
     width: 100%;
     height: 100%;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__logo {
+  .header .header__container .burger .burger__body .burger__logo {
     margin: 0 0 50px 0;
     width: 156px;
     height: 28px;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__logo img {
+  .header .header__container .burger .burger__body .burger__logo img {
     width: 100%;
     height: 100%;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__menu {
+  .header .header__container .burger .burger__body .burger__menu {
     margin: 0 0 88px 0;
     display: flex;
     flex-direction: column;
@@ -863,15 +851,15 @@ h1 {
     letter-spacing: -0.03em;
     text-transform: uppercase;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__menu a {
+  .header .header__container .burger .burger__body .burger__menu a {
     color: #000000;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__footer {
+  .header .header__container .burger .burger__body .burger__footer {
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__footer p {
+  .header .header__container .burger .burger__body .burger__footer p {
     margin: 0 0 0 3px;
     font-size: 16px;
     line-height: 22px;
@@ -879,16 +867,24 @@ h1 {
     color: #000000;
     opacity: 0.5;
   }
-  .header .header__container .burger.burger-active .burger__body .burger__footer a {
+  .header .header__container .burger .burger__body .burger__footer a {
     margin: 6px 0 0 3px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: -0.03em;
     color: #121212;
   }
-  .header .header__container .burger .burger__body {
-    transform: translate(100%, 0px);
-    transition: right 0.5s ease;
+  .header .header__container .burger.burger-active {
+    display: block;
+    visibility: visible;
+    transform: translate(0px, 0px);
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header .header__container .burger.burger-active .burger__body {
+    transform: translate(0px, 0px);
+    transition: transform 0.5s ease;
+    overflow: auto;
   }
   .reviews {
     padding: 0 0 120px 0;
