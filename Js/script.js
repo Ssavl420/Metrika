@@ -90,22 +90,26 @@ const burgerMenu = document.querySelector(".burger__icon");
 const burgerClose = document.querySelector(".burger__close");
 const burgerItem = document.querySelector(".burger__menu");
 const burgerContacts = document.querySelector(".burger__footer");
+
+// if (burgerMenu) {
+//   const burger = document.querySelector(".burger");
+//   burgerMenu.addEventListener("click", function (e) {
+//     burger.classList.toggle();
+//   });
+// }
+
 if (burgerMenu) {
   const burger = document.querySelector(".burger");
   burgerMenu.addEventListener("click", function (e) {
-    burgerMenu.classList.toggle("burger__icon-active");
     burger.classList.toggle("burger-active");
   });
   burgerClose.addEventListener("click", function (e) {
-    burgerMenu.classList.toggle("burger__icon-active");
     burger.classList.toggle("burger-active");
   });
   burgerItem.addEventListener("click", function (e) {
-    burgerMenu.classList.toggle("burger__icon-active");
     burger.classList.toggle("burger-active");
   });
   burgerContacts.addEventListener("click", function (e) {
-    burgerMenu.classList.toggle("burger__icon-active");
     burger.classList.toggle("burger-active");
   });
 }
