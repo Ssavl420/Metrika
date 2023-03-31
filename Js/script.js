@@ -19,7 +19,7 @@ $(document).ready(function () {
     //--Стартовый слайд--//
     initialSlide: 0,
     //--Автоматически проигрывать слайды--//
-    autoplay: true,
+    autoplay: false,
     //--Период авто прокрутки (по умолчанию "3000" это 3 сек.)--//
     autoplaySpeed: 5000,
     //--Пауза при наведении мышки--//
@@ -100,6 +100,7 @@ if (burgerMenu) {
   burgerClose.addEventListener("click", function (e) {
     document.body.classList.toggle("body-lock");
     burger.classList.toggle("burger-active");
+    e.preventDefault();
   });
   burgerItem.addEventListener("click", function (e) {
     document.body.classList.toggle("body-lock");
@@ -109,4 +110,32 @@ if (burgerMenu) {
     document.body.classList.toggle("body-lock");
     burger.classList.toggle("burger-active");
   });
+  burger.addEventListener("click", function (e) {
+    if (!e.target.closest(".burger__body")) {
+      document.body.classList.toggle("body-lock");
+      burger.classList.toggle("burger-active");
+    }
+  });
+}
+
+// Обработка ссылок с data-goto, чтобы в адресной строке не было ничего лишнего.
+const Links = document.querySelectorAll(".link[data-goto]");
+if (Links.length > 0) {
+  Links.forEach((Links) => {
+    Links.addEventListener("click", onMenuLinkClick);
+  });
+
+  function onMenuLinkClick(e) {
+    const Links = e.target;
+    if (Links.dataset.goto && document.querySelector(Links.dataset.goto)) {
+      const gotoBlock = document.querySelector(Links.dataset.goto);
+      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
+      // - document.querySelector('header').offsetHeight
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: "smooth",
+      });
+      e.preventDefault();
+    }
+  }
 }

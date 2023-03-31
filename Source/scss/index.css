@@ -101,6 +101,14 @@ body {
 body.body-lock {
   overflow: hidden;
 }
+body._pc .header .header__container .burger__icon::before {
+  height: 3px;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
 
 .container {
   margin: 0 auto;
@@ -283,7 +291,6 @@ h1 {
 }
 .main__cards a:hover {
   color: #000;
-  border-bottom: 1px solid #000000;
 }
 @media (max-width: 1199px) {
   .main__cards a {
@@ -614,10 +621,6 @@ h1 {
   left: 125px;
   color: #fff;
 }
-.gallery .slick-slider {
-  /* Слайдер запущен */
-  /* Слайдер с точками */
-}
 .gallery .slick-list {
   overflow: hidden;
 }
@@ -718,7 +721,6 @@ h1 {
 }
 .contacts .contacts__inner .contacts__connection .contacts__phone a:hover {
   color: rgba(0, 0, 0, 0.6);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 .contacts .contacts__inner .contacts__connection .contacts__phone::before {
   content: "";
@@ -741,7 +743,6 @@ h1 {
 }
 .contacts .contacts__inner .contacts__connection .contacts__email a:hover {
   color: rgba(0, 0, 0, 0.6);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 .contacts .contacts__inner .contacts__connection .contacts__email::before {
   content: "";
@@ -776,7 +777,7 @@ h1 {
 .footer .footer__menu a:first-child {
   margin: 0 52px 0 -5px;
 }
-.footer .footer__menu a :hover {
+.footer .footer__menu a:hover {
   opacity: 0.5;
 }
 .footer .footer__copyrights {
@@ -790,6 +791,19 @@ h1 {
   opacity: 0.5;
 }
 
+@media (min-width: 1550px) {
+  .gallery .gallery__bg {
+    max-height: 100%;
+  }
+  .gallery .gallery__bg .gallery__text {
+    top: auto;
+    bottom: 8%;
+  }
+  .gallery .slick-arrow {
+    top: auto;
+    bottom: 22.5%;
+  }
+}
 @media (max-width: 1199px) {
   .header .header__container .burger__icon {
     display: block;
@@ -837,6 +851,7 @@ h1 {
     top: 0;
     right: 0;
     width: 73%;
+    max-width: 400px;
     height: 612px;
     display: flex;
     align-items: flex-start;
@@ -1039,14 +1054,6 @@ h1 {
   transition: all 0.5s ease;
   z-index: 1;
 }
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-.popup:target .popup__content {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
 .popup .popup__area {
   position: absolute;
   top: 0;
@@ -1122,8 +1129,16 @@ h1 {
   color: #FFFFFF;
   border-radius: 5px;
 }
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
-.popup:target .popup__content {
+.popup .open .popup__content {
   transform: translate(0px, 0%) scale(1);
   opacity: 1;
 }

@@ -29,6 +29,19 @@ body {
    &.body-lock {
       overflow: hidden;
    }
+   &._pc {
+      .header {
+         .header__container {
+            .burger__icon::before {
+               height: 3px;
+            }
+         }
+      }
+   }
+}
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
 }
 .container {
    margin: 0 auto;
@@ -180,7 +193,6 @@ h1 {
       transition: all .5s ease;
       &:hover {
          color: #000;
-         border-bottom: 1px solid #000000;
       }
       @media (max-width:1199px) {
          margin: 10px 0 0 0;
@@ -466,13 +478,13 @@ h1 {
       }
    }
    /* Слайдер */
-   .slick-slider{
+   // .slick-slider{
       
-      /* Слайдер запущен */
-      .slick-initialized{}
-      /* Слайдер с точками */
-      .slick-dotted{}
-   }
+   //    /* Слайдер запущен */
+   //    // .slick-initialized{}
+   //    /* Слайдер с точками */
+   //    // .slick-dotted{}
+   // }
    /* Ограничивающая оболочка */
    .slick-list {
       overflow: hidden;
@@ -487,9 +499,7 @@ h1 {
       margin: 0;
       padding: 0;
       /* Слайд активный (показывается) */
-      .slick-active{
-         
-      }
+      .slick-active{}
       /* Слайд основной */
       .slick-current{}
       /* Слайд по центру */
@@ -529,7 +539,7 @@ h1 {
          }
       }
       /* Стрелка не активная */
-      .slick-disabled{}
+      // .slick-disabled{}
    }
    /* Точки (булиты) */
    .slick-dots{
@@ -581,7 +591,6 @@ h1 {
                transition: all .5s ease;
                &:hover {
                   color:rgba(0, 0, 0, .6);
-                  border-bottom: 2px solid rgba(0,0,0, .6);
                }
             }
             &::before {
@@ -604,7 +613,6 @@ h1 {
                transition: all .5s ease;
                &:hover {
                   color:rgba(0, 0, 0, .6);
-                  border-bottom: 2px solid rgba(0,0,0, .6);
                }
             }
             &::before {
@@ -640,7 +648,7 @@ h1 {
          &:first-child {
             margin: 0 52px 0 -5px; 
          }
-         :hover {
+         &:hover {
             opacity: 0.5;
          }
       }
@@ -653,6 +661,21 @@ h1 {
       color: #fff;
       p {
          opacity: 0.5;
+      }
+   }
+}
+@media (min-width:1550px) {
+   .gallery {
+      .gallery__bg {
+         max-height: 100%;
+         .gallery__text {
+            top: auto;
+            bottom: 8%;
+         }
+      }
+      .slick-arrow {
+         top: auto;
+         bottom: 22.5%;
       }
    }
 }
@@ -706,6 +729,7 @@ h1 {
                top: 0;
                right: 0;
                width: 73%;
+               max-width: 400px;
                height: 612px;
                display: flex;
                align-items: flex-start;
@@ -929,14 +953,6 @@ h1 {
    visibility: hidden;
    transition: all .5s ease;
    z-index: 1;
-   &:target {
-      opacity: 1;
-      visibility: visible;
-      .popup__content {
-         transform: translate(0px, 0px);
-         opacity: 1;
-      }
-   }
    .popup__area {
       position: absolute;
       top: 0;
@@ -1015,8 +1031,16 @@ h1 {
          }
       }
    }
+   &.open {
+      opacity: 1;
+      visibility: visible;
+      .popup__content {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
+   }
 }
-.popup:target .popup__content {
+.popup .open .popup__content {
       transform: translate(0px, 0%) scale(1);
       opacity: 1;
 }
