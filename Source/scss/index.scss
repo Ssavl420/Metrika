@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope:regular');
 @import "nullindex";
-@import "header";
+@import "header.scss";
 $maxWidth: 1400;
 $maxWidthContainer: 1150;
 
@@ -348,20 +348,20 @@ h1 {
    background-color: #121212;
    color: white;
    .subtitle {
-      margin: 0 0 34px 3px;
+      margin: 0 0 32px 3px;
       color: #fff;
    }
    .services__wrapper {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px 11px;
+      gap: 44px 9px;
       .services__item {
          flex: 1 1 calc((100% / 2) - 11px);
          &:first-child {
             margin: 0 0 0 0;
          }
          &:last-child {
-            padding: 0 0 106px 0;
+            padding: 0 0 99px 0;
          }
          .services__image {
             max-width: 1150px;
@@ -408,18 +408,18 @@ h1 {
    }
 }
 .reviews {
-   padding: 150px 0 157px 0;
+   padding: 148px 0 157px 0;
    .reviews__title {
       margin: 0 0 30px 0;
    }
    .reviews__wrapper {
       display: flex;
       flex-wrap: wrap;
-      gap: 50px 51px;
+      gap: 80px 51px;
       .review__item {
          flex: 1 1 calc((100% / 2) - 50px);
          .review__title {
-            margin: 0 0 14px 0;
+            margin: 0 0 14px -5px;
             font-size: 45px;
             line-height: 61px;
          }
@@ -567,7 +567,7 @@ h1 {
       .contacts__connection {
          display: flex;
          flex-wrap: wrap;
-         gap: 104px;
+         gap: 117px;
          font-size: 60px;
          line-height: 60px;
          .contacts__phone {
@@ -615,21 +615,19 @@ h1 {
    background-color: #121212;
    .footer__menu {
       margin: 0 0 87px 0;
+      padding: 0 11px 0 0;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 55px;
       text-align: center;
       text-transform: uppercase;
-      :nth-child(2) {
-         margin: 0 56px 0 0;
-      }
-      :nth-child(3) {
-         margin: 0 55px 0 0;
-      }
+
       a {
          transition: opacity 0.5s ease 0s;
          color: #fff;
-         &:first-child {
-            margin: 0 52px 0 -5px; 
-         }
+
          &:hover {
             opacity: 0.5;
          }

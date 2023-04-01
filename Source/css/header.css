@@ -1,5 +1,5 @@
 .header {
-  margin: 29.82px auto 70px auto;
+  margin: 30px auto 70px auto;
 }
 .header .header__inner {
   max-width: 1151.35px;
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 58px;
+  gap: 61px;
   color: #121212;
   text-transform: uppercase;
 }
@@ -42,6 +42,9 @@
 }
 
 @media (max-width: 1199px) {
+  .header .header__inner .header__menu {
+    display: none;
+  }
   .header .header__inner .burger__icon {
     display: block;
     position: relative;

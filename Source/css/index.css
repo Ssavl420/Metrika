@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------------*/
 .header {
-  margin: 29.82px auto 70px auto;
+  margin: 30px auto 70px auto;
 }
 .header .header__inner {
   max-width: 1151.35px;
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 58px;
+  gap: 61px;
   color: #121212;
   text-transform: uppercase;
 }
@@ -116,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1199px) {
+  .header .header__inner .header__menu {
+    display: none;
+  }
   .header .header__inner .burger__icon {
     display: block;
     position: relative;
@@ -568,13 +571,13 @@ h1 {
   color: white;
 }
 .services .subtitle {
-  margin: 0 0 34px 3px;
+  margin: 0 0 32px 3px;
   color: #fff;
 }
 .services .services__wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 11px;
+  gap: 44px 9px;
 }
 .services .services__wrapper .services__item {
   flex: 1 1 calc(50% - 11px);
@@ -583,7 +586,7 @@ h1 {
   margin: 0 0 0 0;
 }
 .services .services__wrapper .services__item:last-child {
-  padding: 0 0 106px 0;
+  padding: 0 0 99px 0;
 }
 .services .services__wrapper .services__item .services__image {
   max-width: 1150px;
@@ -628,7 +631,7 @@ h1 {
 }
 
 .reviews {
-  padding: 150px 0 157px 0;
+  padding: 148px 0 157px 0;
 }
 .reviews .reviews__title {
   margin: 0 0 30px 0;
@@ -636,13 +639,13 @@ h1 {
 .reviews .reviews__wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px 51px;
+  gap: 80px 51px;
 }
 .reviews .reviews__wrapper .review__item {
   flex: 1 1 calc(50% - 50px);
 }
 .reviews .reviews__wrapper .review__item .review__title {
-  margin: 0 0 14px 0;
+  margin: 0 0 14px -5px;
   font-size: 45px;
   line-height: 61px;
 }
@@ -778,7 +781,7 @@ h1 {
 .contacts .contacts__inner .contacts__connection {
   display: flex;
   flex-wrap: wrap;
-  gap: 104px;
+  gap: 117px;
   font-size: 60px;
   line-height: 60px;
 }
@@ -826,22 +829,18 @@ h1 {
 }
 .footer .footer__menu {
   margin: 0 0 87px 0;
+  padding: 0 11px 0 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
   text-align: center;
   text-transform: uppercase;
-}
-.footer .footer__menu :nth-child(2) {
-  margin: 0 56px 0 0;
-}
-.footer .footer__menu :nth-child(3) {
-  margin: 0 55px 0 0;
 }
 .footer .footer__menu a {
   transition: opacity 0.5s ease 0s;
   color: #fff;
-}
-.footer .footer__menu a:first-child {
-  margin: 0 52px 0 -5px;
 }
 .footer .footer__menu a:hover {
   opacity: 0.5;
