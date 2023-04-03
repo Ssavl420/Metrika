@@ -190,6 +190,13 @@ h1 {
    }
 }
 .projects {
+   padding: 150px 0 0 0;
+   @media (max-width:1199px) {
+      padding: 120px 0 0 0;
+   }
+   @media (max-width:767px) {
+      padding: 80px 0 0 0;
+   }
    .project__item {
       margin: 0 0 90px 0;
    }
@@ -212,12 +219,7 @@ h1 {
          line-height: 22px;
       }
    }
-   @media (max-width:1199px) {
-      margin: 120px 0 0 0;
-   }
-   @media (max-width:767px) {
-      margin: 80px 0 0 0;
-   }
+
 }
 .project__image {
    margin: 90px 0 0 0;
@@ -238,15 +240,14 @@ h1 {
       margin: 20px 0 0 0;
    }
 }
-.subtitle {
-   margin: 150px 0 30px 0;
+.title {
+   margin: 0 0 30px 0;
    text-transform: uppercase;
    color: #121212;
    @media (max-width:1199px) {
-      margin: 120px 0 0 0;
    }
    @media (max-width:767px) {
-      margin: 80px 0 0 0;
+      margin: 0 0 20px 0;
       font-size: 14px;
       line-height: 19px;
    }
@@ -254,24 +255,36 @@ h1 {
       margin-top: 0;
    }
 }
-.about__text {
-   margin: 31px 0 0 3px;
-   max-width: 1048px;
-   font-size: 45px;
-   line-height: 61px;
+.about {
+   padding: 150px 0 0 0;
    @media (max-width:1199px) {
-      max-width: 690px;
-      font-size: 35px;
-      line-height: 48px;
+      padding: 120px 0 0 0;
    }
    @media (max-width:767px) {
-      margin: 20px 0 0 -1px;
-      padding: 0 6px 0 0;
-      min-width: 346px;
-      font-size: 22px;
-      line-height: 30px;
+      padding: 80px 0 0 0;
+      font-size: 14px;
+      line-height: 19px;
+   }
+   .about__text {
+      margin: 31px 0 0 3px;
+      max-width: 1048px;
+      font-size: 45px;
+      line-height: 61px;
+      @media (max-width:1199px) {
+         max-width: 690px;
+         font-size: 35px;
+         line-height: 48px;
+      }
+      @media (max-width:767px) {
+         margin: 20px 0 0 -1px;
+         padding: 0 6px 0 0;
+         min-width: 346px;
+         font-size: 22px;
+         line-height: 30px;
+      }
    }
 }
+
 .card__btn { 
    margin: 30px 0 0 0;
    display: flex;
@@ -347,7 +360,7 @@ h1 {
    min-width: 100%;
    background-color: #121212;
    color: white;
-   .subtitle {
+   .title {
       margin: 0 0 32px 3px;
       color: #fff;
    }
@@ -560,9 +573,6 @@ h1 {
       max-width: 989px;
       .contacts__title {
          margin: 0 0 74px 0;
-         font-size: 18px;
-         line-height: 25px;
-         text-transform: uppercase;
       }
       .contacts__connection {
          display: flex;
@@ -815,7 +825,7 @@ h1 {
    }
    .services {
       padding: 151px 0 120px 0;
-      .subtitle {margin: 0 0 30px 0;}
+      .title {margin: 0 0 30px 0;}
       .services__wrapper {
          margin: 0 0 80px 0;
          justify-content: center;
@@ -1058,7 +1068,7 @@ h1 {
    .services {
       padding: 80px 0;
       
-      .subtitle {
+      .title {
          margin: 0 0 20px 4px;
       }
       .services__wrapper {

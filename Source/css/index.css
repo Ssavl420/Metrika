@@ -374,6 +374,19 @@ h1 {
   }
 }
 
+.projects {
+  padding: 150px 0 0 0;
+}
+@media (max-width: 1199px) {
+  .projects {
+    padding: 120px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .projects {
+    padding: 80px 0 0 0;
+  }
+}
 .projects .project__item {
   margin: 0 0 90px 0;
 }
@@ -398,16 +411,6 @@ h1 {
     margin: 11px 0 0 -1px;
     font-size: 16px;
     line-height: 22px;
-  }
-}
-@media (max-width: 1199px) {
-  .projects {
-    margin: 120px 0 0 0;
-  }
-}
-@media (max-width: 767px) {
-  .projects {
-    margin: 80px 0 0 0;
   }
 }
 
@@ -438,42 +441,52 @@ h1 {
   }
 }
 
-.subtitle {
-  margin: 150px 0 30px 0;
+.title {
+  margin: 0 0 30px 0;
   text-transform: uppercase;
   color: #121212;
 }
-@media (max-width: 1199px) {
-  .subtitle {
-    margin: 120px 0 0 0;
-  }
-}
 @media (max-width: 767px) {
-  .subtitle {
-    margin: 80px 0 0 0;
+  .title {
+    margin: 0 0 20px 0;
     font-size: 14px;
     line-height: 19px;
   }
 }
-.subtitle :first-child {
+.title :first-child {
   margin-top: 0;
 }
 
-.about__text {
+.about {
+  padding: 150px 0 0 0;
+}
+@media (max-width: 1199px) {
+  .about {
+    padding: 120px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    padding: 80px 0 0 0;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+.about .about__text {
   margin: 31px 0 0 3px;
   max-width: 1048px;
   font-size: 45px;
   line-height: 61px;
 }
 @media (max-width: 1199px) {
-  .about__text {
+  .about .about__text {
     max-width: 690px;
     font-size: 35px;
     line-height: 48px;
   }
 }
 @media (max-width: 767px) {
-  .about__text {
+  .about .about__text {
     margin: 20px 0 0 -1px;
     padding: 0 6px 0 0;
     min-width: 346px;
@@ -570,7 +583,7 @@ h1 {
   background-color: #121212;
   color: white;
 }
-.services .subtitle {
+.services .title {
   margin: 0 0 32px 3px;
   color: #fff;
 }
@@ -774,9 +787,6 @@ h1 {
 }
 .contacts .contacts__inner .contacts__title {
   margin: 0 0 74px 0;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: uppercase;
 }
 .contacts .contacts__inner .contacts__connection {
   display: flex;
@@ -896,7 +906,7 @@ h1 {
   .services {
     padding: 151px 0 120px 0;
   }
-  .services .subtitle {
+  .services .title {
     margin: 0 0 30px 0;
   }
   .services .services__wrapper {
@@ -1117,7 +1127,7 @@ h1 {
   .services {
     padding: 80px 0;
   }
-  .services .subtitle {
+  .services .title {
     margin: 0 0 20px 4px;
   }
   .services .services__wrapper {
