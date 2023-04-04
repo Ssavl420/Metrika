@@ -77,3 +77,14 @@
     line-height: 22px;
   }
 }
+
+@media (max-width: 355px) {
+  .about__text {
+    margin: 20px 0 0 -1px;
+    padding: 0 6px 0 0;
+    max-width: 346px;
+    min-width: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

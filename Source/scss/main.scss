@@ -103,3 +103,13 @@ $maxWidthContainer: 1150;
       }
    }
 } 
+@media (max-width:355px) {
+   h1 {
+      max-width: 269px;
+      font-size: 24px;
+      line-height: 26px;
+   }
+   .main__picture {
+      margin: 0 0 0 0;
+   }
+}
