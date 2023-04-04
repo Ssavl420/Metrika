@@ -252,13 +252,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 3px 0 0 0;
   font-size: 60px;
   line-height: 60px;
-  transform: translate(0px, 30%);
-  opacity: 0;
-  transition: all 0.8s ease;
-}
-.main h1._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 @media (max-width: 1199px) {
   .main h1 {
@@ -313,13 +306,6 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-size: 20px;
   line-height: 27px;
-  transform: translate(0px, 5%);
-  opacity: 0;
-  transition: all 0.8s ease 0.3s;
-}
-.main .main__picture .main__picture-text._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 @media (max-width: 1199px) {
   .main .main__picture .main__picture-text {
@@ -376,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1048px;
   font-size: 45px;
   line-height: 61px;
-  transform: translate(0px, 0px);
+  transform: translate(0px, 10%);
   opacity: 0;
   transition: all 0.8s ease;
 }
@@ -452,10 +438,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 80px 0 0 0;
   }
 }
+.projects .title {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.projects .title._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
 .projects .project__item {
   margin: 0 0 90px 0;
   opacity: 0;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
 }
 .projects .project__item._active {
   transform: translate(0, 0);

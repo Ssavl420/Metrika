@@ -6,10 +6,18 @@
    @media (max-width:767px) {
       padding: 80px 0 0 0;
    }
+   .title {
+      opacity: 0;
+      transition: all 1s ease;
+      &._active {
+         transform: translate(0, 0);
+         opacity: 1;
+      }
+   }
    .project__item {
       margin: 0 0 90px 0;
       opacity: 0;
-      transition: all .8s ease;
+      transition: all 1s ease;
       &._active {
          transform: translate(0, 0);
          opacity: 1;

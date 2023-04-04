@@ -11,10 +11,18 @@
     padding: 80px 0 0 0;
   }
 }
+.projects .title {
+  opacity: 0;
+  transition: all 1s ease;
+}
+.projects .title._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
 .projects .project__item {
   margin: 0 0 90px 0;
   opacity: 0;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
 }
 .projects .project__item._active {
   transform: translate(0, 0);

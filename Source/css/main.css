@@ -4,13 +4,6 @@
   padding: 3px 0 0 0;
   font-size: 60px;
   line-height: 60px;
-  transform: translate(0px, 30%);
-  opacity: 0;
-  transition: all 0.8s ease;
-}
-.main h1._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 @media (max-width: 1199px) {
   .main h1 {
@@ -65,13 +58,6 @@
   color: white;
   font-size: 20px;
   line-height: 27px;
-  transform: translate(0px, 5%);
-  opacity: 0;
-  transition: all 0.8s ease 0.3s;
-}
-.main .main__picture .main__picture-text._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 @media (max-width: 1199px) {
   .main .main__picture .main__picture-text {
