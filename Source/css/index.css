@@ -715,6 +715,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .reviews .reviews__title {
   margin: 0 0 30px 0;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.reviews .reviews__title._active {
+  opacity: 1;
 }
 .reviews .reviews__wrapper {
   display: flex;
@@ -728,11 +733,25 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 14px -5px;
   font-size: 45px;
   line-height: 61px;
+  transform: translate(0px, 10%);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.reviews .reviews__wrapper .review__item .review__title._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .reviews .reviews__wrapper .review__item .review__text {
   max-width: 861px;
   font-size: 22px;
   line-height: 30px;
+  transform: translate(0px, 10%);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.reviews .reviews__wrapper .review__item .review__text._active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 @media (min-width: 1199px) {
