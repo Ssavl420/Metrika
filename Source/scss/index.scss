@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope:regular');
 @import "nullindex";
-@import "header.scss";
-@import "main.scss";
-@import "about.scss";
-@import "projects.scss";
-@import "services.scss";
-@import "reviews.scss";
-@import "gallery.scss";
-@import "contacts.scss";
-@import "footer.scss";
-@import "popup.scss";
+@import "header";
+@import "main";
+@import "about";
+@import "projects";
+@import "services";
+@import "reviews";
+@import "gallery";
+@import "contacts";
+@import "footer";
+@import "popup";
 $maxWidth: 1400;
 $maxWidthContainer: 1150;
 @mixin adaptiv-value($property, $startSize, $minSize, $type) {

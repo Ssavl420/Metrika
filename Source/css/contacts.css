@@ -35,8 +35,7 @@
   margin: -10px 0 0 0;
   position: relative;
   border-bottom: 2px solid rgba(18, 18, 18, 0.5);
-  color: #121212;
-  opacity: 0.5;
+  color: rgba(18, 18, 18, 0.5);
   transition: all 0.5s ease;
 }
 .contacts .contacts__inner .contacts__connection .contacts__email:hover {
@@ -76,6 +75,7 @@
   }
   .contacts .contacts__inner .contacts__connection .contacts__email {
     margin: -10px 0 6px 0;
+    border-bottom: 2px solid rgba(18, 18, 18, 0.5);
   }
   .contacts .contacts__inner .contacts__connection .contacts__email::before {
     content: "";
@@ -114,6 +114,7 @@
   }
   .contacts .contacts__inner .contacts__connection .contacts__email {
     margin: 0 0 0 -1px;
+    color: #121212;
     border-bottom: none;
   }
   .contacts .contacts__inner .contacts__connection .contacts__email a {

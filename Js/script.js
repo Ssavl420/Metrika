@@ -50,6 +50,12 @@ $(document).ready(function () {
     //--asNavFor:".Стиль слайдера", указать двум слайдерам друг друга--//
   });
 });
+// $("body").not("_pc") {
+//   $(".slider").slick({
+//   arrows: false,
+//   dots: true,
+//   });
+// };
 
 ("use strict");
 
@@ -82,8 +88,17 @@ const isMobile = {
 
 if (isMobile.any()) {
   document.body.classList.add("_touch");
+  // $(".slider").slick({
+  //   arrows:false,
+  //   dots:true,
+  // })
+  
 } else {
   document.body.classList.add("_pc");
+  // $(".slider").slick({
+  //   arrows:true,
+  //   dots:false,
+  // });
 }
 
 const burgerMenu = document.querySelector(".burger__icon");
