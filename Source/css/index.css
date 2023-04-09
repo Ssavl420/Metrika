@@ -1091,7 +1091,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 24px;
     height: 24px;
-    background: url("../../Img/logo/03.svg") center no-repeat;
+    background: url("https://cdn-icons-png.flaticon.com/512/3800/3800059.png") cover no-repeat;
   }
 }
 @media (max-width: 767px) {
