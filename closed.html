@@ -11,9 +11,9 @@
    <!--------------------------------------------------------------------------->
    <!--Настройки адаптивности страницы-->
    <!--Фиксированная ширина (ширину берем из дизайн макета)-->
-   <meta name="viewport" content="width=1200">
+   <!-- <meta name="viewport" content="width=1200"> -->
    <!--Адаптивность-->
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
    <!--Отключает формирование ссылки у номера телефона на iOS-->
    <meta name="format-detection" content="telephone=no">
    <!--Краткое описание страницы (в свойстве content="пишем до 140 символов, о чем страница")-->
@@ -33,7 +33,7 @@
    <meta name="Address" content="-------------">
    <!--------------------------------------------------------------------------->
    <!--Редирект (перезагрузка) страницы ="Задержка в секундах; url=Адрес сайта/страницы"-->
-   <meta http-equiv="refresh" content="7; url=index.html">
+   <!-- <meta http-equiv="refresh" content="7; url=./"> -->
    <!--------------------------------------------------------------------------->
    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
    <meta property="og:locale" content="ru_RU">
@@ -51,27 +51,47 @@
    <meta property="og:site_name" content="-------------">
    <!--------------------------------------------------------------------------->
    <!--Ссылка на файл стилей CSS-->
-   <link rel="stylesheet" href="Source/scss/closed.css">
+   <link rel="stylesheet" href="Source/css/closed.css">
 </head>
 
 <!--Отображаемое тело страницы-->
 
 <body>
-   <div class="header">
+   <header class="header">
       <div class="container">
-         <div class="header__container">
+         <div class="header__inner">
             <div class="header__logo">
-               <img src="Img/logo/01.svg" alt="Метрика Лого">
+               <a href="index.html"><img src="Img/logo/01.svg" alt="Метрика Лого"></a>
             </div>
             <div class="header__menu">
-               <a href="index.html#about"><span>О нас</span></a>
-               <a href="index.html#project"><span>Проекты</span></a>
-               <a href="index.html#services"><span>Услуги</span></a>
-               <a href="index.html#contacts"><span>Контакты</span></a>
+               <a data-goto="#about" href="about/" class="link">О нас</a>
+               <a data-goto="#projects" href="projects/" class="link">Проекты</a>
+               <a data-goto="#services" href="services/" class="link">Услуги</a>
+               <a data-goto="#contacts" href="contacts/" class="link">Контакты</a>
+            </div>
+            <div class="burger__icon"></div>
+            <div class="burger">
+               <div class="burger__body">
+                  <div class="burger__logo">
+                     <img src="Img/logo/01.svg" alt="Метрика Лого">
+                  </div>
+                  <div class="burger__menu">
+                     <a data-goto="#about" href="#" class="link">О нас</a>
+                     <a data-goto="#projects" href="#" class="link">Проекты</a>
+                     <a data-goto="#services" href="#" class="link">Услуги</a>
+                     <a data-goto="#reviews" href="#" class="link">Отзывы</a>
+                  </div>
+                  <div class="burger__footer">
+                     <p>для связи:</p>
+                     <a href="tel:+79358954535">+7 935 895-45-35</a>
+                     <a href="mailto:hello@mail.com">hello@mail.com</a>
+                  </div>
+                  <a class="burger__close" href="#!"><img src="Img/icon/close.svg" alt="Close button"></a>
+               </div>
             </div>
          </div>
       </div>
-   </div>
+   </header>
    <div class="main container">
 
       <div class="containerleft">
@@ -97,32 +117,16 @@
       </div>
 
    </div>
-   <div class="footer">
-      <div class="container">
-         <div class="footer__contact">
-            <img src="Img/logo/02.svg" alt="">
-            <p>Контакты</p>
-            <div class="connection">
-               <p><a href="tel:+79358954535">+7 935 895-45-35</a></p>
-               <p><a href="mailto:hello@mail.com">hello@mail.com</a></p>
-            </div>
-         </div>
+   <footer class="footer">
+      <div class="footer__menu">
+         <a data-goto="#about" href="/" class="link">О нас</a>
+         <a data-goto="#projects" href="#" class="link">Проекты</a>
+         <a data-goto="#services" href="#" class="link">Услуги</a>
+         <a data-goto="#contacts" href="#" class="link">Контакты</a>
       </div>
-      <div class="footer__footer">
-         <div class="footermenu">
-            <a href="index.html#about"><span>О нас</span></a>
-            <a href="index.html#project"><span>Проекты</span></a>
-            <a href="index.html#services"><span>Услуги</span></a>
-            <a href="index.html#contacts"><span>Контакты</span></a>
-         </div>
-         <div class="footercopyrights">
-            <p>
-               студия дизайна интерьера Метрика — 2023
-            </p>
-         </div>
-      </div>
-
-   </div>
+      <p class="footer__copyrights">студия дизайна интерьера Метрика — 2023</p>
+   </footer>
+   <script src="Js/script.js"></script>
 </body>
 
 

@@ -893,6 +893,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
   left: calc(50% - 42.5px);
+  bottom: -25px;
   justify-content: center;
   gap: 15px;
 }
@@ -1249,6 +1250,27 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: -0.03em;
 }
+.popup .popup__body .popup__content .popup__close_title {
+  margin: 0 0 4px 0;
+  font-size: 35px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+.popup .popup__body .popup__content .popup__close_picture {
+  margin: 0 auto;
+  max-width: 250px;
+}
+.popup .popup__body .popup__content .popup__close_picture img {
+  width: 100%;
+}
+.popup .popup__body .popup__content .popup__close_subtitle {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
 .popup .popup__body .popup__content .popup__subtitle {
   margin: 0 0 60px 0;
   font-size: 18px;
@@ -1438,4 +1460,4 @@ main {
 
 .transition__left-twopx {
   margin: 0 0 0 2px;
-}
+}/*# sourceMappingURL=index.css.map */

@@ -46,6 +46,27 @@
             letter-spacing: -0.03em;
             p {}
          }
+         .popup__close_title {
+            margin: 0 0 4px 0;
+            font-size: 35px;
+            line-height: 61px;
+            text-align: center;
+            letter-spacing: -0.03em;
+         }
+         .popup__close_picture {
+            margin: 0 auto;
+            max-width: 250px;
+            img {
+               width: 100%;
+            }
+         }
+         .popup__close_subtitle {
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.03em;
+         }
          .popup__subtitle {
             margin: 0 0 60px 0;
             font-size: 18px;

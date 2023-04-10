@@ -50,12 +50,27 @@ $(document).ready(function () {
     //--asNavFor:".Стиль слайдера", указать двум слайдерам друг друга--//
   });
 });
-// $("body").not("_pc") {
+// $(document).ready(function () {
 //   $(".slider").slick({
-//   arrows: false,
-//   dots: true,
-//   });
-// };
+//     if (!$("body").hasClass("_touch")) {
+//       arrows: false,
+//       dots: true,
+//     else {
+//       arrows: false,
+//       dots: true,
+//       ;}
+//     }})
+// };)
+// $(".slider").slick({
+//   if $(".body").hasClass("_pc") {
+//     $(".slider").slick({
+//     arrows: true,
+//     dots: false;})
+//   } else {
+//     $(".slider").slick({
+//     arrows: false,
+//     dots: true;})
+//   };
 
 ("use strict");
 
