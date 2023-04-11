@@ -917,7 +917,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1550px) {
   .gallery .gallery__bg {
-    max-height: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+  .gallery .gallery__bg img {
+    width: 100%;
+    height: 100%;
   }
   .gallery .gallery__bg .gallery__text {
     top: auto;
