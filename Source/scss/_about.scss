@@ -8,25 +8,11 @@
       font-size: 14px;
       line-height: 19px;
    }
-   .title {
-      opacity: 0;
-      transition: all .8s ease .3s;
-      &._active {
-         opacity: 1;
-      }
-   }
    .about__text {
       margin: 31px 0 0 3px;
       max-width: 1048px;
       font-size: 45px;
       line-height: 61px;
-      transform: translate(0px, 10%);
-      opacity: 0;
-      transition: all .8s ease;
-      &._active {
-         transform: translate(0, 0);
-         opacity: 1;
-      }
       @media (max-width:1199px) {
          max-width: 690px;
          font-size: 35px;

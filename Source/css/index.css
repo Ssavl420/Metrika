@@ -234,11 +234,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(0px, 0px);
     transition: all 0.5s ease;
     background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
   }
   .header .header__inner .burger.burger-active .burger__body {
     transform: translate(0px, 0px);
     transition: transform 0.5s ease;
-    overflow: auto;
   }
 }
 @media (max-width: 767px) {
@@ -350,25 +350,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 19px;
   }
 }
-.about .title {
-  opacity: 0;
-  transition: all 0.8s ease 0.3s;
-}
-.about .title._active {
-  opacity: 1;
-}
 .about .about__text {
   margin: 31px 0 0 3px;
   max-width: 1048px;
   font-size: 45px;
   line-height: 61px;
-  transform: translate(0px, 10%);
-  opacity: 0;
-  transition: all 0.8s ease;
-}
-.about .about__text._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 @media (max-width: 1199px) {
   .about .about__text {
@@ -575,13 +561,6 @@ h1, h2, h3, h4, h5, h6 {
 .services .title {
   margin: 0 0 32px 3px;
   color: #fff;
-  transform: translate(0px, 0px);
-  opacity: 0;
-  transition: all 0.8s ease;
-}
-.services .title._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 .services .services__wrapper {
   display: flex;
@@ -589,24 +568,14 @@ h1, h2, h3, h4, h5, h6 {
   gap: 44px 9px;
   overflow: hidden;
 }
-.services .services__wrapper .services__item:nth-child(even) {
-  transform: translate(10%, 0px);
-}
 .services .services__wrapper .services__item {
   flex: 1 1 calc(50% - 11px);
-  transform: translate(-10%, 0px);
-  opacity: 0;
-  transition: all 0.8s ease;
 }
 .services .services__wrapper .services__item:first-child {
   margin: 0 0 0 0;
 }
 .services .services__wrapper .services__item:last-child {
   padding: 0 0 99px 0;
-}
-.services .services__wrapper .services__item._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 .services .services__wrapper .services__item .services__image {
   max-width: 1150px;
@@ -813,14 +782,15 @@ h1, h2, h3, h4, h5, h6 {
   /* Точки (булиты) */
 }
 .gallery .gallery__bg {
-  margin: 0 auto;
   min-width: 100vw;
   max-height: 717px;
+  display: flex;
+  align-items: flex-end;
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.52%, rgba(0, 0, 0, 0.4) 82.81%);
 }
 .gallery .gallery__bg img {
-  min-width: 100%;
+  min-width: 100vw;
 }
 .gallery .gallery__bg .gallery__title {
   max-height: 30px;
@@ -872,10 +842,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   background: url("../../Img/logo/arrowleft.svg") center no-repeat;
   transition: all 0.3s ease;
-}
-.gallery .slick-arrow.slick-prev:hover {
-  opacity: 0.6;
-  transform: scale(1.3);
 }
 .gallery .slick-arrow.slick-next {
   left: 169px;
@@ -1061,7 +1027,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 24px;
   height: 24px;
-  background: url("https://cdn-icons-png.flaticon.com/512/3800/3800059.png") center/cover no-repeat;
+  background: url("../../Img/logo/telegram.png") center/cover no-repeat;
 }
 
 @media (max-width: 1199px) {
@@ -1097,7 +1063,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 24px;
     height: 24px;
-    background: url("https://cdn-icons-png.flaticon.com/512/3800/3800059.png") center/cover no-repeat;
+    background: url("../../Img/logo/telegram.png") center/cover no-repeat;
   }
 }
 @media (max-width: 767px) {
@@ -1298,6 +1264,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .popup .popup__body .popup__content .popup__form input:last-child {
   margin: 0 0 80px 0;
+}
+.popup .popup__body .popup__content .popup__form input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px white; /* цвет вашего фона */
+  -webkit-text-fill-color: black; /* цвет текста */
 }
 .popup .popup__body .popup__content .popup__btn {
   width: 100%;
