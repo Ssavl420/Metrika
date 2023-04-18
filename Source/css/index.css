@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .header__inner .header__menu a {
   padding: 0 0 2px 0;
+  height: 27px;
   color: #121212;
   transition: opacity 0.5s ease;
 }
