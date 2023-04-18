@@ -16,7 +16,6 @@
          flex: 1 1 calc((100% / 2) - 50px);
          .review__title {
             margin: 0 0 14px -5px;
-            font-size: 45px;
             line-height: 61px;
             transform: translate(0px, 10%);
             opacity: 0;
@@ -41,11 +40,12 @@
       }
    }
 }
-@media (min-width:1199px) {
+@media (max-width:1199px) {
    .reviews {
       padding: 117px 0 120px 0;
       .reviews__title {
          margin: 0 0 30px 0;
+         line-height: 48px;
       }
       .reviews__wrapper {
          gap: 80px 10px;
