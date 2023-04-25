@@ -701,6 +701,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .reviews .reviews__wrapper .review__item .review__title {
   margin: 0 0 14px -5px;
+  font-size: 45px;
   line-height: 61px;
   transform: translate(0px, 10%);
   opacity: 0;
